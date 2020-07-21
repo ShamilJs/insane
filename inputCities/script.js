@@ -237,7 +237,7 @@ const defaultList = () => {
 
 const sortResponseArr = () => {
 	let cookie = document.cookie;
-	cookie = cookie.match(/[^prompt=]/gi).join('');
+	cookie = cookie.match(/[^prompt=]/g).join('');
 	if (cookie === 'EN') {
 		[responseArr[0], responseArr[2]] = [responseArr[2], responseArr[0]];
 	}
